@@ -3,8 +3,7 @@
   hosts: all
   become: yes
   tasks:
-    - remote_action:
-        module: ec2_vpc_net_facts
+    - ec2_vpc_net_facts:
         region: us-east-1
         profile: genpact-us-dev
         register: VPC
