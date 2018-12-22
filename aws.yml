@@ -1,9 +1,9 @@
 --- #AWS
-- name: "VPC Demo"
+- name: VPC Demo
   tasks:
     - ec2_vpc_net_facts:
         profile: genpact-us-dev
         region: us-east-1
       register: vpc
     - debug:
-        msg: {{vpc}}
+        msg: "{{vpc}}"
