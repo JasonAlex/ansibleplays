@@ -1,8 +1,7 @@
 --- #AWS
 - name: "VPC Demo"
   tasks:
-    - name: "VPC Info"
-      ec2_vpc_net_facts:
+    - ec2_vpc_net_facts:
         profile: genpact-us-dev
         region: us-east-1
       register: vpc
