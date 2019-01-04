@@ -13,9 +13,9 @@
     - ec2_instance_facts:
         region: ap-south-1
         profile: genpact-ind-prod
-        register: ec2
-      - debug:
-          msg: "{{ec2}}"
+      register: ec2
+    - debug:
+        msg: "{{ec2}}"
 
     # - ec2_ami:
     #     instance_id: i-xxxxxx
